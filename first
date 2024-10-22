@@ -1,0 +1,142 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar { 
+            width: 200px; /* 사이드바 크기 조정 */
+            background-color: gray;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+        }
+
+        .sidebar h1 {
+            color: #e63946;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+
+        }
+        .sidebar ol{
+            padding: 0;
+        }
+
+        .sidebar ol li {
+            margin: 15px 0;
+        }
+
+        .sidebar ol li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar ol li a:hover {
+            background-color: #43456e;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .main-content h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .notice-section {
+            width: 200px; /* 공지사항 크기 조정 */
+            background-color: #ffffff;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+        }
+
+        .notice-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .notice-section ol {
+            padding: 0;
+        }
+
+        .notice-section ol li {
+            margin-bottom: 10px;
+        }
+
+        .notice-section ol li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .notice-section ol li a:hover {
+            text-decoration: underline;
+        }
+
+        /* 버튼 스타일 */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <title>웹페이지 레이아웃</title>
+</head>
+<body>
+
+    <!-- 좌측 사이드바 -->
+    <div class="sidebar">
+        <h1>호서대학교</h1>
+        <ol>
+            <li><a href="https://yena07.github.io/test.html/">My Page</a></li> <!-- 새로운 페이지로 이동 -->
+            <li><a href="#">나의 강좌</a></li>
+            <li><a href="#">비교과 강좌</a></li>
+            <li><a href="#">MOOC/기타강좌</a></li>
+            <li><a href="#">자율강좌</a></li>
+            <li><a href="#">메시지</a></li>
+            <li><a href="#">이용안내</a></li>
+        </ol>
+    </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="main-content">
+        <h2>강좌 목록</h2>
+        <div>
+            <p>알고리즘</p>
+            <p>웹 프로그래밍</p>
+            <p>웹 프로그래밍 및 해킹</p>
+        </div>
+    </div>
+
+    <!-- 공지사항 -->
+    <div class="notice-section">
+        <h3>공지사항</h3>
+        <ol>
+            <li><a href="#">수시모집 면접고사일 공지</a></li>
+            <li><a href="#">성적입력 일정 안내</a></li>
+            <li><a href="#">LMS 온라인 워크숍 안내</a></li>
+        </ol>
+    </div>
+
+</body>
+</html>
